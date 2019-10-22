@@ -1,0 +1,149 @@
+.linksAnim{
+	animation: links 1s ease forwards;
+}
+.rechtsAnim{
+	animation: rechts 1s ease forwards;
+}
+
+/*profiel*/
+.infovak{
+	width: 500px;
+	height: 200px;
+	overflow: none;
+}
+.infovak h3{
+	border-bottom: 2px solid darkgrey;
+    margin: auto;
+    width: max-content;
+}
+.skillvak{
+	width: 200px;
+	margin: 0 10px;
+}
+.tijdlijn{
+  content: '';
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  margin-left: 25%;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 250px;
+}
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 4px solid #60b0f4;
+
+  top: 30px;
+  left: -54px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/*tools*/
+#keywords{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.kennis{
+    padding: 10px;
+    border-radius: 35px;
+    background: #64b0f4;
+    color: #fff;
+    margin: 5px;
+}
+
+
+/*portfolio*/
+.kaartLijst{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.kaart{
+	width: 350px;
+	height: 300px;
+	background-color: grey;
+	background-image: url(../img/logo3.png);
+	margin:5px;
+	animation-delay: 5s;
+	animation: opkomend 1.4s ease forwards;
+}
+/*form*/
+form{
+	display: flex;
+    margin: 0 auto;
+	flex-direction: column;
+	max-width: 500px;
+}
+input{
+	margin-bottom:5px ;
+	width: 100%;
+	outline: none;
+	border:none;
+	color: #fff;
+	padding: 10px;
+	font-size:15px;
+	background-color: lightgrey;
+}
+textarea{
+	outline: none;
+	border:none;
+	width: 100%;
+	background-color: lightgrey;
+	padding: 10px;
+	font-size:15px;
+	color: #fff;
+}
+input[type="submit"]{
+	width:200px;
+	margin: 5px auto;
+	background-color: #64b0f4;
+	cursor: pointer;
+}
+/*footer*/
+footer{
+	height: 300px;
+	background-color: #434141;
+}
+
+/*animaties*/
+@keyframes opkomend{
+	0%{
+		transform: translateX(300px);
+		opacity: 0;
+	}
+	100% {
+	    transform: translateX(0);
+	    opacity: 1;
+	}
+}
+@keyframes links{
+	0% {
+    opacity: 0;
+	    transform: translateX(-300px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateX(0);
+	}
+}
+@keyframes rechts{
+	0% {
+    opacity: 0;
+	    transform: translateX(-300px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateX(0);
+	}
+}

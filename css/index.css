@@ -1,0 +1,165 @@
+body{
+	margin:0;
+	text-align: center;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper{
+	width: 80%;
+	margin:0 auto;
+
+}
+.align{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.titel{
+	border-bottom: 4px solid #60b0f4;
+    width: max-content;
+    margin: 25px auto;
+    font-size: 2em;
+    opacity: 0;
+    
+}
+.animatieTitel{
+	animation: titel .75s ease forwards;
+}
+
+.overLay{
+	background: rgba(39,65,61,0.7);
+	min-height: 100vh;
+	background-position: absolute;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 0;
+}
+
+.centerText{
+	text-align: left;
+	margin-left: 20%;
+	font-size: 2em;
+    color: #ffffff;
+	padding-top: 30vh;
+}
+section{
+	padding-top: 30px;
+}
+
+/*header*/
+#starter{
+	background-image: url("../img/test.jpg");
+	min-height: 100vh;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 0;
+}
+#typed{
+	border-right: 2px solid white;
+	animation: blinkTextCursor 500ms steps(1) infinite normal;
+}
+#pointer{
+	width: 120px;
+	height: 70px;
+	bottom: 0;
+	position: absolute;	
+}
+
+#point{
+	height: 20px;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	animation-duration: 1s;
+	animation-delay: 200ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-name: wiggle;
+}
+span, h3{
+	color: #60b0f4;
+}
+
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*navigatie*/
+
+nav{
+	width:90%;
+	top:0;
+	position: absolute;
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 10px;
+	color:#fff;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0;
+	animation-duration: 1s;
+	animation-delay: 200ms;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-name: verschijn;
+	opacity: 0;
+}
+nav ul li{
+	margin: 10px;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.sticky{
+	background:  #434141;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    animation: fixed 200ms ease forwards;
+}
+.actief{
+	border-bottom: 2px solid #60b0f4;
+}
+
+/*animaties*/
+
+@keyframes verschijn{
+	0%{opacity: 0; transform: rotateX(90deg);}
+	50%{opacity: 0.5; transform: rotateX(45deg);}
+	100%{opacity: 1; transform: rotateX(0deg);}
+}
+@keyframes wiggle{
+	0%{padding-top: 0;}
+	50%{padding-top: 10px;}
+	100%{padding-top: 0;}
+}
+@keyframes fixed{
+	0% {
+    opacity: 0;
+	    transform: translateY(-300px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateY(0);
+	}
+}
+@keyframes blinkTextCursor{
+	 50%{
+	 	border-color: transparent;
+	 }
+}
