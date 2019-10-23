@@ -46,6 +46,7 @@ const experienceNav = document.querySelector("#toolsNav").addEventListener("clic
 const skillsNav = document.querySelector("#portfolioNav").addEventListener("click", () =>{scroll("#portfolio")});
 const blogNav = document.querySelector("#contactNav").addEventListener("click", () =>{scroll("#contact")});
 
+console.log(window.translateY)
 // laad de rest van de css (under fold)
 const laadScript = (src) =>{
 	console.log("got css")

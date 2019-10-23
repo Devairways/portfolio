@@ -1,3 +1,7 @@
+// scroll animatie trigger
+document.addEventListener('load', function(){
+  ScrollTrigger.init();
+});
 
 
 
@@ -28,7 +32,6 @@ const logScroll = () =>{
         document.querySelector("#logo").style.display = "none";
 		document.querySelector("nav").classList.add("sticky");
 		actief("#profielNav");
-		document.querySelector("#profiel h2").classList.add("linksAnim");
 	}
 	else {
         document.querySelector("#logo").style.display = "";
@@ -37,15 +40,12 @@ const logScroll = () =>{
 	}
 	if(tools.getBoundingClientRect().top < 80 ){
 		actief("#toolsNav");
-		document.querySelector("#tools h2").classList.add("linksAnim");
 	}
 	if(portfolio.getBoundingClientRect().top < 80 ){
 		actief("#portfolioNav");
-		document.querySelector("#portfolio h2").classList.add("linksAnim");
 	}
 	if(contact.getBoundingClientRect().top < 80 ){
 		actief("#contactNav");
-		document.querySelector("#contact h2").classList.add("linksAnim");
 	}
 	
 }
@@ -55,7 +55,7 @@ const actief = (id) =>{
 		document.querySelector("nav .actief").classList.remove("actief");
 	}
 	else if(!id){
-		return false;
+		return;
 	}
 	document.querySelector(`nav ${id}`).classList.add("actief");
 }
