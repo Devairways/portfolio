@@ -180,14 +180,24 @@ nav ul li{
 
 @media screen 
   and (max-width: 425px)  {
-  	nav {
+  	nav, .align + h3 {
   		display: none;
   	}
-  	.tijdlijn{
-  		margin-left: 0 !important;
+  	.tijdlijn {
+  		display: none;
   	}
+  	nav ul li{
+  		font-size: 1em;
+  	}
+  	.centerText{
+	margin-left: 10%;
+	padding-top: 60px;
+	}
   	.overLay, #starter{
   		min-height: 640px;
+  	}
+  	#pointer{
+  		position: relative;
   	}
 
 }
