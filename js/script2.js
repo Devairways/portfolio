@@ -3,6 +3,41 @@ document.addEventListener('load', function(){
   ScrollTrigger.init();
 });
 
+const projecten = [
+{
+	naam: "Profiler",
+	cat: 'Fullstack',
+	stack: "React.js + Redux, Node.js, Postgresql",
+	demo: "https://facebook.com",
+	code: "https://github.com",
+	beschrv:"profielensite"
+},
+{
+	naam: "Profiler",
+	cat: "Fullstack",
+	stack: "React.js + Redux, Node.js, Postgresql",
+	demo: "https://facebook.com",
+	code: "https://github.com",
+	beschrv:"profielensite"
+},
+{
+	naam: "Profiler",
+	cat: "Fullstack",
+	stack: "React.js + Redux, Node.js, Postgresql",
+	demo: "https://facebook.com",
+	code: "https://github.com",
+	beschrv:"profielensite"
+},
+{
+	naam: "Profiler",
+	cat: "Fullstack",
+	stack: "React.js + Redux, Node.js, Postgresql",
+	demo: "https://facebook.com",
+	code: "https://github.com",
+	beschrv:"profielensite"
+},
+
+]
 
 
 // formulier versturing
@@ -49,7 +84,7 @@ const logScroll = () =>{
 	}
 	
 }
-
+// nav huidige sectie
 const actief = (id) =>{
 	if (document.querySelector("nav .actief")){
 		document.querySelector("nav .actief").classList.remove("actief");
@@ -60,4 +95,35 @@ const actief = (id) =>{
 	document.querySelector(`nav ${id}`).classList.add("actief");
 }
 
+// const portfolio = (button) =>{
+// 	let filter = button
+// 	case "portAlle" :
+// 	{
+// 		document.querySelectorAll("All").classList.add("zichtbaar")
+// 		portPyth.classList.add("zichtbaar")
+// 		portJvscrp.classList.add("zichtbaar")
+// 	}
+//     case "portFull":
+//     {
+//     	portPyth.classList.add("onzichtbaar")
+//     	portJvscrp.classList.add("zichtbaar")
+//     }
+
+// }
+
+const portfolioDisplay = (button)=>{
+	let array = [...projecten];
+	array.map(project =>{
+		project.cat == button;
+	})
+	return array;
+}
+
+const renderPort = (button)=>{
+	let render = portfolioDisplay(button);
+
+ console.log(render)
+}
+
+renderPort("Fullstack")
 window.onscroll = logScroll;

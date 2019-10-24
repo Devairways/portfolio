@@ -11,6 +11,7 @@ body{
 
 }
 .align{
+	padding-top: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -49,6 +50,9 @@ body{
 .visible {
   transition: opacity 0.5s ease;
   opacity: 1.0;
+}
+.ul{
+	padding-left: 0;
 }
 section{
 	padding-top: 30px;
@@ -119,6 +123,7 @@ nav ul {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 0;
+	padding-left: 25px;
 	animation-duration: 1s;
 	animation-delay: 200ms;
 	animation-timing-function: ease-out;
@@ -133,6 +138,7 @@ nav ul li{
 }
 .sticky{
 	background:  #434141;
+	display:flex;
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -170,4 +176,18 @@ nav ul li{
 	 50%{
 	 	border-color: transparent;
 	 }
+}
+
+@media screen 
+  and (max-width: 425px)  {
+  	nav {
+  		display: none;
+  	}
+  	.tijdlijn{
+  		margin-left: 0 !important;
+  	}
+  	.overLay, #starter{
+  		min-height: 640px;
+  	}
+
 }
