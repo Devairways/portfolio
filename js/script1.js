@@ -1,6 +1,6 @@
 // typ animatie
 const typewriter = (i = 0) =>{
-	const opties = ['Roy Heeffer', 'Webdeveloper', 'Creative Thinker', 'Roy Heeffer'];
+	const opties = ['Roy Heeffer', 'Web developer', 'Creative Thinker', 'Roy Heeffer'];
 	const writer = document.querySelector("#typed");
 	if (i < opties.length){
 		woord = opties[i]

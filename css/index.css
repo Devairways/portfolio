@@ -193,8 +193,10 @@ nav ul li{
   		margin-top: 120px;
   	}
   	.centerText{
-	margin-left: 10%;
-	padding-top: 60px;
+  		height: 500px;
+		margin-left: 10%;
+		padding-top: 60px;
+		font-size: 1.75em;
 	}
   	.overLay, #starter{
   		min-height: 640px;
