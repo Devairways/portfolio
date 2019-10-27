@@ -201,7 +201,9 @@ nav ul li{
   	#pointer{
   		position: relative;
   	}
-  	
+  	.rechtsAnim{
+	animation: verschijn .75s ease forwards;
+    }
   	/*sticky nav*/
   	nav ul li{
   		font-size: 1em;
