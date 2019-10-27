@@ -97,6 +97,7 @@
 	margin:5px;
 }
 .hover{
+	color: #64b0f4;
 	padding-top: 15px;
     z-index: 2;
     opacity: 0;
