@@ -73,7 +73,7 @@
 				</div>
 			</div>
 			<h3>afgeronde studies:</h3>
-			<div class="tijdlijn">
+			<div class="tijdlijn mob">
 
 				<ul>
 					<li class="container" data-scroll="toggle(.popAnim, .invisible) offset(0,200px) once">
@@ -121,7 +121,7 @@
 			<div class="align">
 				<div >
 					<h3>Keywords:</h3>
-					<ul class="ul" data-scroll="toggle(.popAnim, .invisible) offset(0,200px) once"  id="keywords">
+					<ul class="ul" data-scroll="toggle(.popAnim, .invisible) offset(0,200px) once">
 						<li class="kennis">Html</li>
 						<li class="kennis">Css</li>
 						<li class="kennis">Javascript</li>
@@ -170,53 +170,66 @@
 	<section id="portfolio">
 		<div class="wrapper">
 			<h2 class="titel" data-scroll="offset(0,50px) toggle(.rechtsAnim, .invisible) offset(0,200px) once">Portfolio</h2>
-			<ul class="ul">
+			<ul class="ul mob">
 				<li><button class="button" id="portAlle">Alle</button></li>
 				<li><button class="button" id="portFull">Node.js</button></li>
 				<li><button class="button" id="portPyth">Python</button></li>
 				<li><button class="button" id="portJvscr">Javascript</button></li>
 			</ul>
 			<div class="kaartLijst" data-scroll="offset(0,50px) toggle(.opAnim, .invisible) offset(0,200px) once">
-				<div class="kaart">
-					<img src="" alt="Profiler.io" >
+				<div class="kaart" id="profiler">
 					<div class="hover">
-						<a href="">Code</a>/<a href="">Demo</a>
-						<p>React.js + Redux, Node.js, Postgresql</p>
+						<h3>Profiler.io</h3>
+						<div class="portBtn">
+							<a href="https://github.com/Devairways/kleurspel">Code</a> / <a href="https://happy-panini-8ba21e.netlify.com">Demo</a>
+						</div>
+						<p class="titel beschrv">React.js + Redux, Node.js, Postgresql</p>
+					</div>
+					
+				</div>
+				<div class="kaart" id="financeGame">
+					<div class="hover">
+						<h3>StockShare</h3>
+						<div class="portBtn">
+							<a href="">Code</a> / <a href="">Demo</a>
+						</div>
+						<p class="titel beschrv">HTML, Bootstrap, Python + Flask</p>
 					</div>
 				</div>
-				<div class="kaart">
-					<img src="" alt="FinanceGame">
+				<div class="kaart" id="kleurspel">
 					<div class="hover">
-						<a href="">Code</a>/<a href="">Demo</a>
-						<p>Python + Flask</p>
+						<h3>Herken de hex-kleur</h3>
+						<div class="portBtn">
+							<a href="https://github.com/Devairways/kleurspel">Code</a> / <a href="https://happy-panini-8ba21e.netlify.com">Demo</a>
+						</div>
+						<p class="titel beschrv">HTML, CSS, Javascript</p>
 					</div>
 				</div>
-				<div class="kaart">
+				<div class="kaart mob" id="gezichtsherkenning">
+					<div class="hover">
+						<h3>Smart Brain</h3>
+						<div class="portBtn">
+							<a href="">Code</a> / <a href="https://gezichtsherkenning.herokuapp.com/">Demo</a>
+						</div>
+						<p class="titel beschrv">React.js + Redux, Node.js, Postgresql</p>
+					</div>
+				</div>
+				<div class="kaart mob" id="KleurKiezer">
+					<div class="hover">
+						<h3>KleurGenerator</h3>
+						<div class="portBtn">
+							<a href="">Code</a> / <a href="">Demo</a>
+						</div>
+						<p class="titel beschrv">HTML, CSS, Javascript</p>
+					</div>
+				</div>
+				<div class="kaart mob">
 					<img src="" alt="Kleurspel">
 					<div class="hover">
-						<a href="">Code</a>/<a href="">Demo</a>
-						<p>HTML, CSS, Javascript</p>
-					</div>
-				</div>
-				<div class="kaart">
-					<img src="" alt="Profiler.io" >
-					<div class="hover">
-						<a href="">Code</a>/<a href="">Demo</a>
-						<p>React.js + Redux, Node.js, Postgresql</p>
-					</div>
-				</div>
-				<div class="kaart">
-					<img src="" alt="FinanceGame">
-					<div class="hover">
-						<a href="">Code</a>/<a href="">Demo</a>
-						<p>Python + Flask</p>
-					</div>
-				</div>
-				<div class="kaart">
-					<img src="" alt="Kleurspel">
-					<div class="hover">
-						<a href="">Code</a>/<a href="">Demo</a>
-						<p>HTML, CSS, Javascript</p>
+						<div class="portBtn">
+							<a href="">Code</a> / <a href="">Demo</a>
+						</div>
+						<p class="titel beschrv">HTML, CSS, Javascript</p>
 					</div>
 				</div>
 			</div>

@@ -1,12 +1,11 @@
 /*animatie klassen*/
 .linksAnim{
-	animation: links .5s ease forwards;
+	animation: links .75s ease forwards;
 }
 .rechtsAnim{
-	animation: rechts .5s ease forwards;
+	animation: rechts .75s ease forwards;
 }
 .opAnim{
-	animation-delay: 10s;
 	animation: opkomend 1s ease forwards;
 }
 .draaiAnim{
@@ -17,8 +16,9 @@
 	animation: pop 1s both;
 }
 .button{
-	width:200px;
+	width:100px;
 	margin:5px;
+	font-size: 15px;
 	outline: none;
 	border: none;
 	padding: 10px;
@@ -30,7 +30,7 @@
 .infovak{
 	width: 500px;
 	height: 200px;
-	overflow: none;
+	margin-bottom: 20px;
 }
 .infovak h3{
 	border-bottom: 2px solid darkgrey;
@@ -38,7 +38,7 @@
     width: max-content;
 }
 .skillvak{
-	width: 200px;
+	width: 220px;
 	margin: 0 10px;
 }
 .skillvak h2 p{
@@ -73,12 +73,7 @@
   z-index: 1;
 }
 /*tools*/
-#keywords{
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
+
 .kennis{
     padding: 10px;
     border-radius: 35px;
@@ -98,23 +93,35 @@
 	width: 350px;
 	height: 300px;
 	background-color: grey;
-	background-image: url(../img/test.jpg);
-	/*overflow: scroll;*/
+	background-image: url(../img/KleurSpel.bmp);
 	margin:5px;
 }
 .hover{
-	padding-top: 80px;
+	padding-top: 15px;
     z-index: 2;
     opacity: 0;
     width: 100%;
     height: 100%;
     transform: translateY(0);
-    transition: all .75s ease;
+    transition: all .5s ease-in-out;
+}
+.portBtn{
+    border: 2px solid #64b0f4;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+.beschrv{
+	font-size: 1em;
+    color: darkgrey;
+}
+.kaart:hover{
+		background:#434141;
 }
 .hover:hover{
 	    transform: translateY(40px);
 		opacity: 1;
-	}
+}
 
 /*form*/
 form{

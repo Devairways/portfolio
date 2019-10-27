@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 body{
 	margin:0;
 	text-align: center;
 	box-sizing: border-box;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 .wrapper{
@@ -53,6 +54,9 @@ body{
 }
 .ul{
 	padding-left: 0;
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 section{
 	padding-top: 30px;
@@ -123,7 +127,7 @@ nav ul {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 0;
-	padding-left: 30px;
+	padding-left: 20px;
 	animation-duration: 1s;
 	animation-delay: 200ms;
 	animation-timing-function: ease-out;
@@ -197,10 +201,7 @@ nav ul li{
   	#pointer{
   		position: relative;
   	}
-  	/*verwijder tijdlijn*/
-  	.tijdlijn {
-  		display: none;
-  	}
+  	
   	/*sticky nav*/
   	nav ul li{
   		font-size: 1em;
@@ -208,6 +209,10 @@ nav ul li{
   	/*heightfix profiel foto*/
   	img[alt="profiel_foto"]{
   		margin-top: 120px;
+  	}
+  	/*portfolio cleanups*/
+  	.mob{
+  		display: none;
   	}
   	
 
