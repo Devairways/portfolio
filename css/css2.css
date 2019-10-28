@@ -51,7 +51,7 @@
   background-color: black;
   top: 0;
   bottom: 0;
-  margin-left: 50%;
+  margin-left: 20%;
 }
 
 .container {
@@ -72,26 +72,7 @@
   border-radius: 50%;
   z-index: 1;
 }
-.Lcontainer {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 250px;
-  margin-left: -400px;
-}
-.Lcontainer::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: white;
-  border: 4px solid #60b0f4;
-  top: 30px;
-  left:unset;
-  right: -50px;
-  border-radius: 50%;
-  z-index: 1;
-}
+
 
 /*tools*/
 
@@ -115,6 +96,7 @@
 	height: 300px;
 	background-color: grey;
 	background-image: url(../img/KleurSpel.bmp);
+	background-position: center;
 	margin:5px;
 }
 .hover{
@@ -259,3 +241,30 @@ footer{
 	    opacity: 1;
 	}
 }
+@media screen 
+  and (min-width: 769px){
+  	/*tijdlijn brede schermen*/
+    .Lcontainer {
+	  padding: 10px 40px;
+	  position: relative;
+	  background-color: inherit;
+	  width: 250px;
+	  margin-left: -400px;
+	}
+	.Lcontainer::after {
+	  content: '';
+	  position: absolute;
+	  width: 25px;
+	  height: 25px;
+	  background-color: white;
+	  border: 4px solid #60b0f4;
+	  top: 30px;
+	  left:unset;
+	  right: -50px;
+	  border-radius: 50%;
+	  z-index: 1;
+	}
+  	.tijdlijn{
+  		margin-left: 50%;
+  	}
+  }
