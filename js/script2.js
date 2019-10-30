@@ -33,19 +33,19 @@ const projecten = [
 //portfolio
 const portfolioProject = (event) =>{
 	projecten.map(project =>{
-		document.querySelector(`#${project.naam}`).style.animation = "clear 1s both";
+		document.querySelector(`#${project.naam}`).style.animation = "clear .5s both";
 	})
 	if (event && event !== 'alle'){
 		let works = projecten.filter(project =>{
 			return project.cat == event;
 		})
 		works.map(project =>{
-		document.querySelector(`#${project.naam}`).style.animation = "vergroot 1s both";
+		document.querySelector(`#${project.naam}`).style.animation = "vergroot .5s both";
 		})
 		return
 	}
 	projecten.map(project =>{
-	document.querySelector(`#${project.naam}`).style.animation = "vergroot 1s both";
+	document.querySelector(`#${project.naam}`).style.animation = "vergroot .5s both";
 	})
 }
 
