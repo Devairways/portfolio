@@ -15,6 +15,9 @@
 .popAnim{
 	animation: pop 1s both;
 }
+.clear{
+	animation: vergroot 1s both;
+}
 .button{
 	width:100px;
 	margin:5px;
@@ -95,9 +98,9 @@
 	width: 350px;
 	height: 300px;
 	background-color: grey;
-	background-image: url(../img/KleurSpel.bmp);
 	background-position: center;
-	margin:5px;
+	transition: all .5s ease-in;
+	animation: clear 1s both;
 }
 .hover{
 	color: #64b0f4;
@@ -120,7 +123,7 @@
     color: darkgrey;
 }
 .kaart:hover{
-		background:#434141;
+		background:#434141 !important;
 }
 .hover:hover{
 	    transform: translateY(40px);
@@ -139,7 +142,7 @@ input{
 	width: 100%;
 	outline: none;
 	border:none;
-	color: #fff;
+	color: #434141;
 	padding: 10px;
 	font-size:15px;
 	background-color: lightgrey;
@@ -151,10 +154,11 @@ textarea{
 	background-color: lightgrey;
 	padding: 10px;
 	font-size:15px;
-	color: #fff;
+	color: #434141;
 }
 input[type="submit"]{
 	width:200px;
+	color: #fff;
 	margin: 5px auto;
 	background-color: #64b0f4;
 	cursor: pointer;
@@ -212,6 +216,36 @@ footer{
 	    opacity: 1;
 	}
 }
+@keyframes clear{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		opacity: .5;
+		
+	}
+	100%{
+		transform: scale(0);
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+}
+@keyframes vergroot{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	50%{
+		opacity: .5;
+		
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
 @keyframes draai{
 	0% {
 	    -webkit-transform: perspective(400px) rotateY(90deg);
@@ -268,7 +302,6 @@ footer{
   		margin-left: 50%;
   	}
   	nav img{
-	    transition: all .5s ease-in-out;
 	    transform: scale(1.6);
 	    padding-left: 20px;
   	}

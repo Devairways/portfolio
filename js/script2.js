@@ -5,40 +5,55 @@ document.addEventListener('load', function(){
 
 const projecten = [
 {
-	naam: "Profiler",
-	cat: 'Fullstack',
-	stack: "React.js + Redux, Node.js, Postgresql",
-	demo: "https://facebook.com",
-	code: "https://github.com",
-	beschrv:"profielensite"
+	naam: "profiler",
+	cat: 'node',
 },
 {
-	naam: "Profiler",
-	cat: "Fullstack",
-	stack: "React.js + Redux, Node.js, Postgresql",
-	demo: "https://facebook.com",
-	code: "https://github.com",
-	beschrv:"profielensite"
+	naam: "kleurspel",
+	cat: "javascript",
 },
 {
-	naam: "Profiler",
-	cat: "Fullstack",
-	stack: "React.js + Redux, Node.js, Postgresql",
-	demo: "https://facebook.com",
-	code: "https://github.com",
-	beschrv:"profielensite"
+	naam: "smartbrain",
+	cat: "node",
 },
 {
-	naam: "Profiler",
-	cat: "Fullstack",
-	stack: "React.js + Redux, Node.js, Postgresql",
-	demo: "https://facebook.com",
-	code: "https://github.com",
-	beschrv:"profielensite"
+	naam: "kleurgenerator",
+	cat: "javascript",
+},
+{
+	naam: "stockshare",
+	cat: "python",
+},
+{
+	naam: "kleur",
+	cat: "javascript",
 },
 
 ]
+//portfolio
+const portfolioProject = (event) =>{
+	projecten.map(project =>{
+		document.querySelector(`#${project.naam}`).style.animation = "clear 1s both";
+	})
+	if (event && event !== 'alle'){
+		let works = projecten.filter(project =>{
+			return project.cat == event;
+		})
+		works.map(project =>{
+		document.querySelector(`#${project.naam}`).style.animation = "vergroot 1s both";
+		})
+		return
+	}
+	projecten.map(project =>{
+	document.querySelector(`#${project.naam}`).style.animation = "vergroot 1s both";
+	})
+}
 
+
+document.querySelector("#portAlle").addEventListener("click",()=>{portfolioProject("alle")});
+document.querySelector("#portFull").addEventListener("click",()=>{portfolioProject("node")});
+document.querySelector("#portPyth").addEventListener("click",()=>{portfolioProject("python")});
+document.querySelector("#portJvscr").addEventListener("click",()=>{portfolioProject("javascript")});
 
 // formulier versturing
 document.querySelector("#contact-form").addEventListener("submit",(e)=>{
@@ -94,36 +109,5 @@ const actief = (id) =>{
 	}
 	document.querySelector(`nav ${id}`).classList.add("actief");
 }
-
-// const portfolio = (button) =>{
-// 	let filter = button
-// 	case "portAlle" :
-// 	{
-// 		document.querySelectorAll("All").classList.add("zichtbaar")
-// 		portPyth.classList.add("zichtbaar")
-// 		portJvscrp.classList.add("zichtbaar")
-// 	}
-//     case "portFull":
-//     {
-//     	portPyth.classList.add("onzichtbaar")
-//     	portJvscrp.classList.add("zichtbaar")
-//     }
-
-// }
-
-const portfolioDisplay = (button)=>{
-	let array = [...projecten];
-	array.map(project =>{
-		project.cat == button;
-	})
-	return array;
-}
-
-const renderPort = (button)=>{
-	let render = portfolioDisplay(button);
-
- console.log(render)
-}
-
-renderPort("Fullstack")
+portfolioProject()
 window.onscroll = logScroll;

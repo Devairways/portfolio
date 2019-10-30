@@ -122,6 +122,9 @@ nav{
 	display: flex;
 	justify-content: space-between;
 }
+nav img{
+	 transition: all .5s ease-in-out;
+}
 nav ul {
 	display: flex;
 	flex-direction: row;
@@ -168,7 +171,7 @@ nav ul li{
 }
 @keyframes fixed{
 	0% {
-    opacity: 0;
+   		opacity: 0;
 	    transform: translateY(-300px);
 	}
 	100% {
