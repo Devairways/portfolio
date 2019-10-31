@@ -216,6 +216,9 @@ nav ul li{
   		margin-top: 120px;
   	}
   	/*portfolio cleanups*/
+  	#portWrap{
+  		width: 100%;
+  	}
   	.mob{
   		display: none;
   	}

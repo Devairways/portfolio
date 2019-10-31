@@ -95,13 +95,12 @@
 }
 .kaartLijst{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .kaart{
 	width: 350px;
 	height: 300px;
-	align-items: flex-start; 
 	background-color: grey;
 	background-position: center;
 	animation: clear .5s both;
@@ -240,6 +239,7 @@ footer{
 	100%{
 		transform: scale(1);
 		opacity: 1;
+
 	}
 }
 
@@ -272,6 +272,7 @@ footer{
 	    opacity: 1;
 	}
 }
+
 @media screen 
   and (min-width: 769px){
   	/*tijdlijn brede schermen*/
