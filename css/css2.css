@@ -240,9 +240,6 @@ footer{
 	100%{
 		transform: scale(1);
 		opacity: 1;
-		height: 300px;
-		width: 350px;
-
 	}
 }
 
