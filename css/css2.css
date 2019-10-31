@@ -89,14 +89,19 @@
 
 
 /*portfolio*/
+#center{
+	display: inline-flex;
+	justify-content: center;
+}
 .kaartLijst{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 .kaart{
 	width: 350px;
 	height: 300px;
+	align-items: flex-start; 
 	background-color: grey;
 	background-position: center;
 	animation: clear .5s both;
@@ -222,7 +227,7 @@ footer{
 	100%{
 		transform: scale(0);
 		opacity: 0;
-		display: none;
+		height: 0;
 		width: 0;
 	}
 }
@@ -235,6 +240,8 @@ footer{
 	100%{
 		transform: scale(1);
 		opacity: 1;
+		height: 300px;
+		width: 350px;
 
 	}
 }
