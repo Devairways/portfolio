@@ -17,7 +17,7 @@ const projecten = [
 	cat: "node",
 },
 {
-	naam: "kleurgenerator",
+	naam: "kleur",
 	cat: "javascript",
 },
 {
@@ -25,8 +25,8 @@ const projecten = [
 	cat: "python",
 },
 {
-	naam: "kleur",
-	cat: "python",
+	naam: "portfoliosite",
+	cat: "javascript",
 },
 
 ]
